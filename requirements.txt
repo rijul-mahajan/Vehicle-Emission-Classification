@@ -6,3 +6,4 @@ seaborn>=0.11.2
 scikit-learn>=1.0.2
 tqdm>=4.64.0
 kneed>=0.8.1
+plotly>=6.0.1
