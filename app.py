@@ -181,27 +181,6 @@ def create_model_info_visualizations(model_data):
 
     st.markdown("---")
 
-    if (
-        model_data.get("clustering_results")
-        and "DBSCAN" in model_data["clustering_results"]
-    ):
-        dbscan_info = model_data["clustering_results"]["DBSCAN"]
-        st.subheader("DBSCAN Clustering Analysis")
-        st.write(f"Number of clusters: {dbscan_info.get('n_clusters', 'N/A')}")
-        st.write(f"Noise points: {dbscan_info.get('n_noise', 'N/A')}")
-        st.write(f"Silhouette score: {dbscan_info.get('silhouette_score', 'N/A'):.4f}")
-        st.write(f"eps: {dbscan_info.get('eps', 'N/A'):.2f}")
-        st.write(f"min_samples: {dbscan_info.get('min_samples', 'N/A')}")
-
-        if "k_distance_plot" in dbscan_info:
-            st.image(
-                dbscan_info["k_distance_plot"],
-                caption="K-Distance Plot for eps Selection",
-                use_column_width=True,
-            )
-
-    st.markdown("---")
-
     # 5. Visual explanation of how the model works
     st.subheader("How the Model Works")
 
