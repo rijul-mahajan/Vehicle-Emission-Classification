@@ -29,7 +29,7 @@ This project is a machine learning-based web application that predicts vehicle e
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/vehicle-emission-classifier.git
+   git clone https://github.com/rijul-mahajan/vehicle-emission-classifier.git
    cd vehicle-emission-classifier
    ```
 
@@ -49,7 +49,7 @@ This project is a machine learning-based web application that predicts vehicle e
    **Note**: Ensure you have Python 3.8+ installed.
 
 4. Download the dataset (if not included) and place it in the `dataset/` folder:
-   - The project uses `Fuel_Consumption_Ratings_2023.csv`. You can obtain it from [Natural Resources Canada](https://open.canada.ca/data/en/dataset/9f73928c-0e15-48ae-8433-c29025e99602) or a similar source.
+   - The project uses `Fuel_Consumption_Ratings_2023.csv`. You can obtain it from [Kaggle](https://www.kaggle.com/datasets/imtkaggleteam/fuel-concumption-ratings-2023/data) or a similar source.
 
 ## Usage
 
