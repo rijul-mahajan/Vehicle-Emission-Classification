@@ -15,7 +15,6 @@ from sklearn.metrics import (
 )
 from sklearn.decomposition import PCA
 import warnings
-from tqdm import tqdm  # Added for progress bars
 
 warnings.filterwarnings("ignore")
 
