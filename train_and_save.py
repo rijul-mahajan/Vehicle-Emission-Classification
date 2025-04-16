@@ -69,6 +69,7 @@ try:
                         if "Fuel Type" in results["df"].columns
                         else []
                     ),
+                    "df": results["df"],
                 },
                 f,
             )
