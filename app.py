@@ -39,7 +39,7 @@ st.markdown(
     .low-emission {background-color: #2ecc71; color: white;}
     .moderate-emission {background-color: #f1c40f; color: white;}
     .high-emission {background-color: #e74c3c; color: white;}
-    .insight-card {background-color: transparent; height: 200px; padding: 15px; border-radius: 5px; margin: 10px 0; border-left: 5px solid #3498DB;}
+    .insight-card {background-color: #1F2633; height: 200px; padding: 15px; border-radius: 5px; margin: 10px 0; border-left: 5px solid #3498DB;}
 </style>
 """,
     unsafe_allow_html=True,

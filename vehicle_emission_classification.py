@@ -6,7 +6,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, HistGradientBoostingClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.cluster import KMeans, DBSCAN
-from sklearn.svm import SVC
 from sklearn.metrics import (
     silhouette_score,
     accuracy_score,
@@ -134,7 +133,6 @@ def train_classification_models(X_train, X_test, y_train, y_test):
             random_state=42, class_weight="balanced"
         ),
         "KNN": KNeighborsClassifier(),
-        "SVM": SVC(probability=True, random_state=42),
     }
 
     param_grid = {
@@ -161,12 +159,7 @@ def train_classification_models(X_train, X_test, y_train, y_test):
             "weights": ["uniform", "distance"],
             "metric": ["euclidean", "manhattan", "minkowski"],
             "p": [1, 2],
-        },
-        "SVM": {
-            "C": [0.1, 1, 10],
-            "kernel": ["rbf", "poly"],
-            "gamma": ["scale", "auto", 0.1],
-        },
+        }
     }
 
     results = {}
